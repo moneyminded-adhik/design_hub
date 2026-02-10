@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Naruto Uzumaki - Rasengan Power metal poster. Premium quality wall art featuring vibrant colors and sacred geometry.">
+    <title>Naruto Uzumaki - Rasengan Power | Design Hub</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <style>
+        .product-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-12);
+            margin-bottom: var(--space-16);
+        }
+
+        .size-options {
+            display: flex;
+            gap: var(--space-3);
+            margin-bottom: var(--space-6);
+        }
+
+        .size-option {
+            padding: var(--space-3) var(--space-5);
+            border: 2px solid var(--color-border);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-weight: 600;
+        }
+
+        .size-option:hover,
+        .size-option.active {
+            border-color: var(--color-accent-primary);
+            background: var(--color-bg-elevated);
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            margin-bottom: var(--space-6);
+        }
+
+        .quantity-selector button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: var(--color-bg-elevated);
+            color: var(--color-text-primary);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            font-size: var(--text-lg);
+            font-weight: 700;
+            transition: all var(--transition-fast);
+        }
+
+        .quantity-selector button:hover {
+            background: var(--color-accent-primary);
+            color: var(--color-text-inverse);
+        }
+
+        .quantity-selector input {
+            width: 60px;
+            text-align: center;
+            padding: var(--space-3);
+            background: var(--color-bg-elevated);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            color: var(--color-text-primary);
+            font-weight: 600;
+        }
+
+        .pincode-checker {
+            display: flex;
+            gap: var(--space-3);
+            margin-bottom: var(--space-6);
+        }
+
+        .pincode-checker input {
+            flex: 1;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: var(--space-6) 0;
+        }
+
+        .features-list li {
+            padding: var(--space-3) 0;
+            border-bottom: 1px solid var(--color-border);
+            color: var(--color-text-secondary);
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+        }
+
+        .features-list li:before {
+            content: "✓";
+            color: var(--color-accent-primary);
+            font-weight: 700;
+        }
+
+        .review-item {
+            padding: var(--space-5);
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-4);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-3);
+        }
+
+        .reviewer-name {
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
+        .review-date {
+            font-size: var(--text-sm);
+            color: var(--color-text-tertiary);
+        }
+
+        @media (max-width: 768px) {
+            .product-container {
+                grid-template-columns: 1fr;
+                gap: var(--space-8);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">Design Hub</a>
+
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" placeholder="Search posters... (⌘K)"
+                        onclick="openSpotlight()" readonly>
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li><a href="../index.html" class="nav-link">Home</a></li>
+                        <li><a href="../index.html#featured" class="nav-link">Shop</a></li>
+                    </ul>
+
+                    <div class="nav-actions"><button class="btn-icon" id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+                        <button class="btn-icon" onclick="openSpotlight()" aria-label="Search">
+                            🔍
+                        </button>
+                        <button class="btn-icon" onclick="window.location.href='cart.html'" aria-label="Cart">
+                            🛒
+                            <span class="badge" style="display: none;">0</span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="container" style="padding-top: var(--space-8);">
+        <nav style="font-size: var(--text-sm); color: var(--color-text-secondary);">
+            <a href="../index.html" style="color: var(--color-text-secondary);">Home</a> /
+            <a href="../index.html#anime" style="color: var(--color-text-secondary);">Anime</a> /
+            <span style="color: var(--color-text-primary);">Naruto</span>
+        </nav>
+    </div>
+
+    <!-- Product Details -->
+    <main class="container" style="padding: var(--space-8) var(--space-6);">
+        <div class="product-container">
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+                <div class="gallery-main">
+                    <img src="/assets/posters/poster_naruto_1770750385891.png" alt="Naruto Uzumaki - Rasengan Power Metal Poster"
+                        id="main-image">
+                </div>
+                <div class="gallery-thumbnails">
+                    <div class="gallery-thumb active">
+                        <img src="/assets/posters/poster_naruto_1770750385891.png" alt="View 1">
+                    </div>
+                    <div class="gallery-thumb">
+                        <img src="/assets/posters/poster_naruto_1770750385891.png" alt="View 2">
+                    </div>
+                    <div class="gallery-thumb">
+                        <img src="/assets/posters/poster_naruto_1770750385891.png" alt="View 3">
+                    </div>
+                    <div class="gallery-thumb">
+                        <img src="/assets/posters/poster_naruto_1770750385891.png" alt="View 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div>
+                <div
+                    style="display: inline-block; background: var(--color-bg-elevated); padding: var(--space-2) var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-4);">
+                    <span
+                        style="color: var(--color-accent-primary); font-weight: 600; font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.5px;">Spiritual
+                        Collection</span>
+                </div>
+
+                <h1 style="font-size: var(--text-4xl); margin-bottom: var(--space-4);">Naruto Uzumaki - Rasengan Power</h1>
+
+                <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                    <div class="card-rating">
+                        <div class="stars" style="font-size: var(--text-xl);">★★★★★</div>
+                        <span style="color: var(--color-text-secondary);">4.9 (287 reviews)</span>
+                    </div>
+                    <span style="color: var(--color-success); font-weight: 600;">✓ In Stock</span>
+                </div>
+
+                <div style="display: flex; align-items: baseline; gap: var(--space-4); margin-bottom: var(--space-8);">
+                    <span
+                        style="font-size: var(--text-5xl); font-weight: 700; color: var(--color-text-primary);">₹1,799</span>
+                    <span
+                        style="font-size: var(--text-2xl); color: var(--color-text-tertiary); text-decoration: line-through;">₹2,299</span>
+                    <span
+                        style="background: var(--color-accent-secondary); color: white; padding: var(--space-2) var(--space-4); border-radius: var(--radius-md); font-weight: 700;">20%
+                        OFF</span>
+                </div>
+
+                <p style="color: var(--color-text-secondary); line-height: 1.8; margin-bottom: var(--space-8);">Dynamic action shot of Naruto performing his signature Rasengan jutsu. Vibrant oranges and blues with dramatic speed lines capture the energy and determination of the beloved ninja.</p>
+
+                <!-- Size Selection -->
+                <div style="margin-bottom: var(--space-6);">
+                    <label style="display: block; font-weight: 600; margin-bottom: var(--space-3);">Select Size:</label>
+                    <div class="size-options">
+                        <div class="size-option active">18 x 24"</div>
+                        <div class="size-option">24 x 36"</div>
+                        <div class="size-option">30 x 40"</div>
+                        <div class="size-option">36 x 48"</div>
+                    </div>
+                </div>
+
+                <!-- Quantity -->
+                <div style="margin-bottom: var(--space-6);">
+                    <label style="display: block; font-weight: 600; margin-bottom: var(--space-3);">Quantity:</label>
+                    <div class="quantity-selector">
+                        <button onclick="decrementQty()">−</button>
+                        <input type="number" id="product-qty" value="1" min="1" max="10" readonly>
+                        <button onclick="incrementQty()">+</button>
+                    </div>
+                </div>
+
+                <!-- Pincode Checker -->
+                <div style="margin-bottom: var(--space-8);">
+                    <label style="display: block; font-weight: 600; margin-bottom: var(--space-3);">Check
+                        Delivery:</label>
+                    <div class="pincode-checker">
+                        <input type="text" class="input" id="pincode-input" placeholder="Enter pincode" maxlength="6">
+                        <button class="btn btn-secondary" onclick="checkPincode()">Check</button>
+                    </div>
+                    <div id="pincode-result"></div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div style="display: flex; gap: var(--space-4); margin-bottom: var(--space-8);">
+                    <button class="btn btn-primary" style="flex: 1; padding: var(--space-4);" onclick="addToCart(6)">
+                        Add to Cart
+                    </button>
+                    <button class="btn btn-outline" style="flex: 1; padding: var(--space-4);" onclick="buyNow(6)">
+                        Buy Now
+                    </button>
+                </div>
+
+                <!-- Features -->
+                <div
+                    style="background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6);">
+                    <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-4);">Product Features</h3>
+                    <ul class="features-list">
+                        <li>High-quality metal print with vibrant colors</li>
+                        <li>Ready to hang with magnetic mounting system</li>
+                        <li>Scratch and fade resistant coating</li>
+                        <li>Size: 18 x 24 inches (standard)</li>
+                        <li>Made in India with premium materials</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Description & Reviews Tabs -->
+        <div style="margin-top: var(--space-16);">
+            <div
+                style="display: flex; gap: var(--space-6); border-bottom: 2px solid var(--color-border); margin-bottom: var(--space-8);">
+                <button class="tab-btn active" onclick="showTab('description')"
+                    style="padding: var(--space-4) var(--space-6); background: none; border: none; color: var(--color-text-secondary); font-weight: 600; cursor: pointer; border-bottom: 3px solid transparent; transition: all var(--transition-fast);">
+                    Description
+                </button>
+                <button class="tab-btn" onclick="showTab('reviews')"
+                    style="padding: var(--space-4) var(--space-6); background: none; border: none; color: var(--color-text-secondary); font-weight: 600; cursor: pointer; border-bottom: 3px solid transparent; transition: all var(--transition-fast);">
+                    Reviews (287)
+                </button>
+            </div>
+
+            <!-- Description Tab -->
+            <div id="description-tab" class="tab-content">
+                <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-6);">About This Poster</h2>
+                <p style="color: var(--color-text-secondary); line-height: 1.8; margin-bottom: var(--space-6);">Naruto Uzumaki, the beloved ninja who never gives up, is captured here in his signature pose.</p>
+                <p style="color: var(--color-text-secondary); line-height: 1.8; margin-bottom: var(--space-6);">The vibrant oranges and blues with dramatic speed lines perfectly capture the energy of the Rasengan.</p>
+                <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">Why Choose Metal Posters?</h3>
+                <p style="color: var(--color-text-secondary); line-height: 1.8;">
+                    Our metal posters offer superior durability and visual impact compared to traditional paper prints.
+                    The metal surface
+                    enhances color vibrancy and provides a unique, premium finish that elevates any space. The magnetic
+                    mounting system
+                    makes installation effortless – no drilling, no damage to walls, and easy to reposition whenever you
+                    desire.
+                </p>
+            </div>
+
+            <!-- Reviews Tab -->
+            <div id="reviews-tab" class="tab-content" style="display: none;">
+                <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-6);">Customer Reviews</h2>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div>
+                            <div class="reviewer-name">Priya Sharma</div>
+                            <div class="stars" style="color: var(--color-accent-primary); margin-top: var(--space-1);">
+                                ★★★★★</div>
+                        </div>
+                        <div class="review-date">2 weeks ago</div>
+                    </div>
+                    <p style="color: var(--color-text-secondary); line-height: 1.6;">
+                        Absolutely stunning! The colors are so vibrant and the quality is exceptional. It looks amazing
+                        in my meditation room.
+                        The magnetic mounting system made it so easy to hang. Highly recommend!
+                    </p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div>
+                            <div class="reviewer-name">Rajesh Kumar</div>
+                            <div class="stars" style="color: var(--color-accent-primary); margin-top: var(--space-1);">
+                                ★★★★★</div>
+                        </div>
+                        <div class="review-date">1 month ago</div>
+                    </div>
+                    <p style="color: var(--color-text-secondary); line-height: 1.6;">
+                        Perfect gift for my parents' anniversary. They loved the modern take on traditional art. The
+                        metal finish gives it
+                        a premium look. Delivery was quick and packaging was excellent.
+                    </p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div>
+                            <div class="reviewer-name">Anita Desai</div>
+                            <div class="stars" style="color: var(--color-accent-primary); margin-top: var(--space-1);">
+                                ★★★★☆</div>
+                        </div>
+                        <div class="review-date">3 weeks ago</div>
+                    </div>
+                    <p style="color: var(--color-text-secondary); line-height: 1.6;">
+                        Beautiful artwork and great quality. Only wish there were more size options available. Overall
+                        very satisfied with the purchase.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+        style="background: var(--color-bg-tertiary); padding: var(--space-12) 0; margin-top: var(--space-16); border-top: 1px solid var(--color-border);">
+        <div class="container text-center">
+            <p style="color: var(--color-text-tertiary); font-size: var(--text-sm);">
+                © 2026 Design Hub. All rights reserved. Made with ❤️ in India.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Spotlight Search Modal -->
+    <div class="spotlight-backdrop" id="spotlight-backdrop"></div>
+    <div class="spotlight-modal" id="spotlight-modal">
+        <div class="spotlight-search">
+            <input type="text" class="spotlight-input" id="spotlight-input" placeholder="Search products..."
+                autocomplete="off">
+        </div>
+        <div class="spotlight-results" id="spotlight-results">
+            <p style="padding: 1rem; color: var(--color-text-tertiary);">Start typing to search...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/script.js"></script>
+    <script>
+        let quantity = 1;
+
+        function incrementQty() {
+            if (quantity < 10) {
+                quantity++;
+                document.getElementById('product-qty').value = quantity;
+            }
+        }
+
+        function decrementQty() {
+            if (quantity > 1) {
+                quantity--;
+                document.getElementById('product-qty').value = quantity;
+            }
+        }
+
+        function buyNow(id) {
+            addToCart(id);
+            setTimeout(() => {
+                window.location.href = '/pages/cart.html';
+            }, 500);
+        }
+
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.style.display = 'none';
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.style.borderBottomColor = 'transparent';
+                btn.style.color = 'var(--color-text-secondary)';
+            });
+
+            // Show selected tab
+            document.getElementById(tabName + '-tab').style.display = 'block';
+
+            // Add active class to clicked button
+            event.target.style.borderBottomColor = 'var(--color-accent-primary)';
+            event.target.style.color = 'var(--color-text-primary)';
+        }
+
+        // Size selection
+        document.querySelectorAll('.size-option').forEach(option => {
+            option.addEventListener('click', function () {
+                document.querySelectorAll('.size-option').forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+# Design Hub - Metal Poster E-commerce Prototype
+
+## Project Setup
+- [/] Create project structure and initialize files
+- [/] Set up design system (CSS variables, typography, colors)
+- [x] Generate 10 poster designs (6 completed, 4 pending)
+
+## Core Pages
+- [x] Home page with categories, featured products, search, filters, and sorting
+- [x] Category pages (Spiritual & Anime)
+- [/] Product detail pages (10 individual pages)
+- [x] Cart page
+- [x] Checkout page
+- [x] Payment page
+
+## Features Implementation
+- [ ] Search functionality (spotlight-style)
+- [ ] Filter system (price, category, stock, rating)
+- [ ] Sort functionality (price, relevance, rating)
+- [ ] Responsive design (mobile + desktop)
+- [ ] Product image gallery
+- [ ] Pincode availability checker
+- [ ] Reviews and ratings display
+- [ ] Add to cart functionality
+- [ ] Guest checkout flow
+
+## Design & Polish
+- [ ] Implement redroar.in inspired aesthetics
+- [ ] Add smooth animations and transitions
+- [ ] Ensure mobile responsiveness
+- [ ] Final testing and verification
