@@ -334,21 +334,15 @@ function renderProductCard(product) {
         ${discount > 0 ? `<div class="card-badge">${discount}% OFF</div>` : ''}
       </div>
       <div class="card-content">
-        <div class="card-category">${product.category}</div>
         <h3 class="card-title">${product.name}</h3>
-        <div class="card-rating">
-          <div class="stars">${renderStars(product.rating)}</div>
-          <span class="rating-count">(${product.reviews})</span>
-        </div>
         <div class="card-price">
-          <span class="price-current">₹${product.price.toLocaleString('en-IN')}</span>
-          ${product.originalPrice ? `<span class="price-original">₹${product.originalPrice.toLocaleString('en-IN')}</span>` : ''}
+          <span class="price-current">From Rs. ${product.price.toLocaleString('en-IN')}.00</span>
         </div>
         <div class="card-actions">
           <button class="btn btn-primary" onclick="addToCart(${product.id})">
-            Add to Cart
+            Add to wall
           </button>
-          <button class="btn btn-secondary" onclick="window.location.href='/pages/product-${product.slug}.html'">
+          <button class="btn btn-outline" onclick="window.location.href='/pages/product-${product.slug}.html'">
             View Details
           </button>
         </div>

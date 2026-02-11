@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Design Hub - Premium metal posters featuring spiritual Hindu deities and anime characters. High-quality wall art delivered across India.">
+    content="Design Hub - Premium metal posters featuring spiritual Hindu deities and anime characters. Museum-grade wall art delivered across India.">
   <meta name="keywords" content="metal posters, wall art, spiritual posters, anime posters, home decor, Indian art">
   <title>Design Hub - Premium Metal Posters | Spiritual & Anime Art</title>
 
@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
 
   <!-- Styles -->
@@ -23,83 +23,122 @@
 <body>
 
   <!-- ============================================
+       ANNOUNCEMENT MARQUEE BAR
+       ============================================ -->
+  <div class="announcement-bar">
+    <div class="marquee-track">
+      <div class="marquee-item">
+        <span>50,000+ delivered</span>
+        <span>Ready to hang — Museum grade art</span>
+        <span>no cheap paper posters</span>
+        <span>Handcrafted artwork</span>
+        <span>50,000+ delivered</span>
+        <span>Ready to hang — Museum grade art</span>
+        <span>no cheap paper posters</span>
+        <span>Handcrafted artwork</span>
+      </div>
+      <div class="marquee-item">
+        <span>50,000+ delivered</span>
+        <span>Ready to hang — Museum grade art</span>
+        <span>no cheap paper posters</span>
+        <span>Handcrafted artwork</span>
+        <span>50,000+ delivered</span>
+        <span>Ready to hang — Museum grade art</span>
+        <span>no cheap paper posters</span>
+        <span>Handcrafted artwork</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
        HEADER & NAVIGATION
        ============================================ -->
   <header class="header">
     <div class="container">
       <div class="header-content">
-        <!-- Logo -->
-        <a href="index.html" class="logo">Design Hub</a>
-
-        <!-- Search Bar -->
-        <div class="search-container">
-          <span class="search-icon">🔍</span>
-          <input type="text" class="search-input" placeholder="Search posters... (⌘K)" onclick="openSpotlight()"
-            readonly>
-        </div>
-
-        <!-- Navigation -->
+        <!-- Navigation Left -->
         <nav class="nav">
           <ul class="nav-links">
-            <li><a href="#featured" class="nav-link">Featured</a></li>
-            <li><a href="#spiritual" class="nav-link">Spiritual</a></li>
-            <li><a href="#anime" class="nav-link">Anime</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="#featured" class="nav-link">Themes ↓</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
           </ul>
-
-          <div class="nav-actions">
-            <button class="btn-icon" onclick="openSpotlight()" aria-label="Search">
-              🔍
-            </button>
-            <button class="btn-icon" onclick="window.location.href='pages/cart.html'" aria-label="Cart">
-              🛒
-              <span class="badge" style="display: none;">0</span>
-            </button>
-          </div>
-
-          <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu">
-            ☰
-          </button>
         </nav>
+
+        <!-- Logo (centered) -->
+        <a href="index.html" class="logo">Design Hub</a>
+
+        <!-- Actions Right -->
+        <div class="nav-actions">
+          <button class="btn-icon" onclick="openSpotlight()" aria-label="Search">
+            🔍
+          </button>
+          <button class="btn-icon" onclick="window.location.href='pages/cart.html'" aria-label="Cart">
+            🛒
+            <span class="badge" style="display: none;">0</span>
+          </button>
+        </div>
+
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu">
+          ☰
+        </button>
       </div>
     </div>
   </header>
 
   <!-- ============================================
-       HERO SECTION
+       HERO SECTION — Editorial Style
        ============================================ -->
-  <section class="hero" style="background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%); padding: 4rem 0;">
+  <section class="hero">
     <div class="container">
       <div style="text-align: center; max-width: 800px; margin: 0 auto;">
         <h1
-          style="font-family: var(--font-display); font-size: var(--text-5xl); margin-bottom: var(--space-6); background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-          Premium Metal Posters
+          style="font-family: var(--font-display); font-size: var(--text-6xl); font-style: italic; font-weight: 700; margin-bottom: var(--space-6); color: var(--color-text-primary);">
+          Your Wall is Empty. So is Your Drive.
         </h1>
         <p
-          style="font-size: var(--text-xl); color: var(--color-text-secondary); margin-bottom: var(--space-8); line-height: 1.6;">
-          Transform your space with stunning metal art featuring spiritual deities and iconic anime characters.
-          Handcrafted in India with premium materials.
+          style="font-family: var(--font-display); font-style: italic; font-size: var(--text-xl); color: var(--color-text-secondary); margin-bottom: var(--space-8); line-height: 1.5;">
+          This isn't decor. It's your mindset — framed.
         </p>
-        <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
-          <a href="#featured" class="btn btn-primary" style="padding: var(--space-4) var(--space-8);">
-            Explore Collection
-          </a>
-          <a href="#about" class="btn btn-outline" style="padding: var(--space-4) var(--space-8);">
-            Learn More
-          </a>
-        </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================
+       STATS BAR
+       ============================================ -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">4+</div>
+          <div class="stat-label">Years in Business</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number">50,000+</div>
+          <div class="stat-label">Products Delivered</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number">#1</div>
+          <div class="stat-label">Wall Art Brand in India</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
        MAIN CONTENT - PRODUCTS WITH FILTERS
        ============================================ -->
   <main class="container" style="padding: var(--space-12) var(--space-6);">
-    <div style="display: grid; grid-template-columns: 280px 1fr; gap: var(--space-8);">
+    <div style="display: grid; grid-template-columns: 250px 1fr; gap: var(--space-8);">
 
       <!-- FILTERS SIDEBAR -->
       <aside class="filters-sidebar">
-        <h2 style="font-size: var(--text-2xl); margin-bottom: var(--space-6);">Filters</h2>
+        <h2
+          style="font-size: var(--text-lg); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--space-6);">
+          Filters</h2>
 
         <!-- Category Filter -->
         <div class="filter-section">
@@ -167,7 +206,7 @@
         <!-- Sort & Results Header -->
         <div
           style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-8); flex-wrap: wrap; gap: var(--space-4);">
-          <h2 id="featured" style="font-size: var(--text-3xl); margin: 0;">Featured Products</h2>
+          <h2 id="featured" class="section-title" style="text-align: left; margin-bottom: 0;">trending art</h2>
 
           <div style="display: flex; align-items: center; gap: var(--space-3);">
             <label style="font-size: var(--text-sm); color: var(--color-text-secondary);">Sort by:</label>
@@ -192,42 +231,51 @@
   <!-- ============================================
        FEATURES SECTION
        ============================================ -->
-  <section id="about"
-    style="background: var(--color-bg-secondary); padding: var(--space-16) 0; margin-top: var(--space-16);">
+  <section id="about" class="features-section">
     <div class="container">
-      <h2 style="text-align: center; font-size: var(--text-4xl); margin-bottom: var(--space-12);">Why Choose Design Hub?
+      <h2
+        style="text-align: center; font-family: var(--font-display); font-style: italic; font-size: var(--text-3xl); margin-bottom: var(--space-12); font-weight: 400;">
+        Why Choose Design Hub?
       </h2>
 
       <div class="grid grid-4" style="gap: var(--space-8);">
         <div style="text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: var(--space-4);">🎨</div>
-          <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-3);">Premium Quality</h3>
+          <div style="font-size: 2.5rem; margin-bottom: var(--space-4);">🎨</div>
+          <h3
+            style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--space-3); font-weight: 600;">
+            Premium Quality</h3>
           <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">
             High-definition prints on durable metal with vibrant, fade-resistant colors
           </p>
         </div>
 
         <div style="text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: var(--space-4);">🧲</div>
-          <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-3);">Easy Installation</h3>
+          <div style="font-size: 2.5rem; margin-bottom: var(--space-4);">🧲</div>
+          <h3
+            style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--space-3); font-weight: 600;">
+            Easy Installation</h3>
           <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">
-            Magnetic mounting system - no drilling required, ready to hang in seconds
+            Magnetic mounting system — no drilling required, ready to hang in seconds
           </p>
         </div>
 
         <div style="text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: var(--space-4);">🇮🇳</div>
-          <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-3);">Made in India</h3>
+          <div style="font-size: 2.5rem; margin-bottom: var(--space-4);">🇮🇳</div>
+          <h3
+            style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--space-3); font-weight: 600;">
+            Made in India</h3>
           <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">
             Handcrafted with pride using premium materials and eco-friendly processes
           </p>
         </div>
 
         <div style="text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: var(--space-4);">🚚</div>
-          <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-3);">Fast Delivery</h3>
+          <div style="font-size: 2.5rem; margin-bottom: var(--space-4);">🚚</div>
+          <h3
+            style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--space-3); font-weight: 600;">
+            Fast Delivery</h3>
           <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">
-            Free shipping on orders above ₹2000, delivered safely across India
+            Free shipping on orders above ₹2,000, delivered safely across India
           </p>
         </div>
       </div>
@@ -237,59 +285,54 @@
   <!-- ============================================
        FOOTER
        ============================================ -->
-  <footer
-    style="background: var(--color-bg-tertiary); padding: var(--space-12) 0; margin-top: var(--space-16); border-top: 1px solid var(--color-border);">
+  <footer>
     <div class="container">
       <div class="grid grid-4" style="gap: var(--space-8); margin-bottom: var(--space-8);">
         <div>
-          <h3
-            style="font-family: var(--font-display); font-size: var(--text-2xl); color: var(--color-accent-primary); margin-bottom: var(--space-4);">
+          <h3 style="font-family: var(--font-display); font-size: var(--text-2xl); margin-bottom: var(--space-4);">
             Design Hub
           </h3>
-          <p style="color: var(--color-text-secondary); font-size: var(--text-sm);">
+          <p style="color: var(--color-text-muted); font-size: var(--text-sm);">
             Premium metal posters that transform your space into an art gallery.
           </p>
         </div>
 
         <div>
-          <h4 style="font-size: var(--text-lg); margin-bottom: var(--space-4);">Shop</h4>
-          <ul style="list-style: none;">
-            <li style="margin-bottom: var(--space-2);"><a href="#spiritual"
-                style="color: var(--color-text-secondary); font-size: var(--text-sm);">Spiritual Collection</a></li>
-            <li style="margin-bottom: var(--space-2);"><a href="#anime"
-                style="color: var(--color-text-secondary); font-size: var(--text-sm);">Anime Collection</a></li>
-            <li style="margin-bottom: var(--space-2);"><a href="#featured"
-                style="color: var(--color-text-secondary); font-size: var(--text-sm);">Featured Products</a></li>
+          <h4
+            style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--space-4);">
+            Shop</h4>
+          <ul>
+            <li style="margin-bottom: var(--space-2);"><a href="#spiritual">Spiritual Collection</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#anime">Anime Collection</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#featured">Featured Products</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 style="font-size: var(--text-lg); margin-bottom: var(--space-4);">Support</h4>
-          <ul style="list-style: none;">
-            <li style="margin-bottom: var(--space-2);"><a href="#"
-                style="color: var(--color-text-secondary); font-size: var(--text-sm);">Contact Us</a></li>
-            <li style="margin-bottom: var(--space-2);"><a href="#"
-                style="color: var(--color-text-secondary); font-size: var(--text-sm);">Shipping Info</a></li>
-            <li style="margin-bottom: var(--space-2);"><a href="#"
-                style="color: var(--color-text-secondary); font-size: var(--text-sm);">Returns & Refunds</a></li>
+          <h4
+            style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--space-4);">
+            Support</h4>
+          <ul>
+            <li style="margin-bottom: var(--space-2);"><a href="#">Contact Us</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#">Shipping Info</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#">Returns & Refunds</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 style="font-size: var(--text-lg); margin-bottom: var(--space-4);">Legal</h4>
-          <ul style="list-style: none;">
-            <li style="margin-bottom: var(--space-2);"><a href="#"
-                style="color: var(--color-text-secondary); font-size: var(--text-sm);">Privacy Policy</a></li>
-            <li style="margin-bottom: var(--space-2);"><a href="#"
-                style="color: var(--color-text-secondary); font-size: var(--text-sm);">Terms of Service</a></li>
-            <li style="margin-bottom: var(--space-2);"><a href="#"
-                style="color: var(--color-text-secondary); font-size: var(--text-sm);">Cookie Policy</a></li>
+          <h4
+            style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--space-4);">
+            Legal</h4>
+          <ul>
+            <li style="margin-bottom: var(--space-2);"><a href="#">Privacy Policy</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#">Terms of Service</a></li>
+            <li style="margin-bottom: var(--space-2);"><a href="#">Cookie Policy</a></li>
           </ul>
         </div>
       </div>
 
-      <div style="text-align: center; padding-top: var(--space-8); border-top: 1px solid var(--color-border);">
-        <p style="color: var(--color-text-tertiary); font-size: var(--text-sm);">
+      <div style="text-align: center; padding-top: var(--space-8); border-top: 1px solid rgba(255,255,255,0.1);">
+        <p style="color: var(--color-text-muted); font-size: var(--text-sm);">
           © 2026 Design Hub. All rights reserved. Made with ❤️ in India.
         </p>
       </div>
